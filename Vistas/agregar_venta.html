@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="css/agregar_ventas.css">
+    <title>Ventas</title>
+</head>
+<body>
+    <header>
+       <h1>Nueva Venta</h1>
+    </header>
+    <section id="container">
+    <form>
+            <button class="btn_exit" type="submit" name="salir">x</button>
+        </form>  
+        <form id="form_new_cliente_venta" name="form_new_cliente_venta" id="form_new_cliente_venta" class="datos">
+                <div class="datos_cliente">
+                    <div class="action_cliente">
+                        <h4>Datos del cliente</h4>
+                </div>
+                     <input type="hidden" name="action" vale="addCliente">
+                    <input type="hidden" id="idcliente" name="idcliente" value="" requiered>
+                    <div class="wd100">
+                        <button type="submit" class="btn_eliminar"  onclick=""href=""><i class='bx bxs-user-plus'></i></button>
+                        <label>Nombre</label>
+                            <select>
+                                <option>Nombre</option>
+                            </select>
+                    </div>
+                    <div class="wd100">
+                        <label>Teléfono</label>
+                        <input type="text" name="tel_cliente" id="tel_cliente" required>
+                    </div>
+                    <div class="wd100">
+                        <label>Dirección</label>
+                        <input type="text" name="dir_cliente" id="dir_cliente"  required>
+                    </div>
+                    <div id="div_registro_cliente" class="wd100">
+                </div>  
+            </div>
+            <div class="datos_ventas">
+            <br>
+                <h4>Datos de ventas</h4>
+                <div>               
+                    <div class="wd100">
+                        <label>Vendedor</label>
+                        <select>
+                            <option>Vendedor</option>
+                        </select>
+                    </div>
+                    <div class="wd100">
+                        <label>Código</label>
+                        <input type="text" name="id_vendedor" id="id_vendor">
+                    </div>
+                    <div class="wd100">
+                        <label for="Método de pago">Método de pago</label> 
+                            <select name="Método de pago">
+                                <option selected>Seleccionar metodo de pago</option>
+                                <option value="Efectivo">Efectivo</option>
+                            </select>
+                    </div>
+                    <div class="wd100">
+                        <label>Fecha</label>
+                        <input type="text" name="fec_venta" id="fec_venta" disabled="disabled" required>
+                    </div>
+                     <div class="wd100">
+                        <label for="Estado">Estado</label> 
+                            <select name="Estado">
+                                <option selected>Seleccione un estado</option>
+                                <option value="Pagada">Pagada</option>
+                                <option value="sinpagar">Sin pagar</option>
+                            </select>
+                    </div>
+                    <div class="wd100">
+                        <label>Iva</label>
+                        <select>
+                            <option selected>Seleccione Iva</option>
+                            <option value="12%">12%</option>
+                            <option value="16%">16%</option>
+                            <option value="19%">19%</option>
+                        </select>
+                    </div>
+
+                    <div class="wd100">
+                        <label>Acciones</label>
+                        <div id="acciones_ventas">
+                            <a href="#" class="btn_ok textcenter" id="btn_anular_venta">Cancelar</a>
+                            <a href="#" class="btn_ok textcenter" id="btn_facturar_venta">Facturar</a>
+                        </div>
+                    </div>    
+                </div>
+            </div>          
+        </form>   
+     </section>
+</body>
+</html>

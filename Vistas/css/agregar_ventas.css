@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Nunito', sans-serif;
+}
+#container{
+    margin-top: 80px;
+}
+
+#form_new_cliente_venta{
+    width: 45%;
+    display: flex;
+    padding: 20px 15px 15px;
+    margin: auto;
+}
+
+h1, h2, h3{
+    
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+h1{
+    margin-top: 30px;
+    text-align: justify;
+    padding: 20px 0;
+}
+p{
+    font-family:'Nunito', sans-serif;
+    letter-spacing: 2px;
+    font-size: 14px;
+    line-height: 20px;
+}
+a{
+    text-decoration: none;
+    font-family:'Nunito', sans-serif;
+    letter-spacing: 1px;
+    margin-left: 50px;
+    float: left;
+}
+i{
+    font-size: 24px;
+
+}
+span {
+    font-family: 'Nunito';
+    letter-spacing: 1px;
+    font-size: 14px;
+    line-height: 20px;
+}
+form .btn_exit{
+    position: relative;
+    margin-top: 10px;
+    margin-right:290px;
+    float: right;
+    width: 35px;
+    height: 30px;
+    outline: none;
+    border-radius: 15%;
+    background-color:#FA1E1E;
+    cursor: pointer;
+}
+form .btn_agregar{
+    width: 40px;
+    height: 40px;
+    background: #0E4123;
+    color: #f9f7f7;
+    line-height: 20px 30px;
+    margin-left: 25px;
+    margin-top: 55px;
+    cursor: pointer;
+    border: none;
+    border-radius: 55%;
+    font-weight: bold;
+    outline: none;
+}
+
+form .btn_agregar:hover{
+    background: #059234;
+    border-radius: 50%;
+}
+input[type="submit"]{
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    line-height: 20px;
+    margin-top: 5px;
+    background: #0E4123;
+    color: #f9f7f7;
+    cursor: pointer;
+    border: none;
+    border-radius: 55%;
+    font-weight: bold;
+    font-size: 25px;
+    font-weight: 600;
+    float: right;
+    outline: none;
+}
+
+input[type="submit"]:hover{
+    background: #059234;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 900px){
+
+    #form_new_cliente_venta{
+      width: 55%;
+        display: flex;
+        padding: 10px 15px 15px;
+        margin: auto;
+    }
+    form .btn_exit{
+    position: relative;
+    margin-top: 10px;
+    margin-right:90px;
+    float: right;
+    width: 35px;
+    height: 30px;
+    outline: none;
+    border-radius: 15%;
+    background-color:#d9534f;
+    cursor: pointer;
+}
+} 
+
+header{
+    display: flex;
+    width: 100%;
+    height: 130px;
+    background:#F3F3F5;
+    color: gray;
+    padding: 1px;    
+    font-size: 20px;
+    align-content: center;
+    margin-top: -20px;
+}
+
+/*****************************************************************/
+hr{
+    border: 0;
+    background: #CCC;
+    height: 1px;
+    margin: 10px 0;
+    display: block;
+}
+label{
+    display: block;
+    font-family: 'Nunito';
+    font-size: 12pt;
+    margin: 15px auto 5px auto;
+}
+input,select{
+    display: block;
+    width: 100%;
+    font-size: 11pt;
+    padding: 5px;
+    border:1px solid #85829e;
+    border-radius: 5px;
+}
+/*============ Ventas ============*/
+.datos_cliente, .datos_ventas, .title_page{
+    width: 90%;
+    max-width: 900px;
+    margin:0%;
+    margin-left: 20px;
+    margin-bottom: 10px;
+
+}
+.datos{
+    background-color: #e3ecef;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.action_cliente{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    align-items: center;
+}
+.action_cliente h4{
+    margin-left: 0px;
+}
+.datos label{
+    margin: 5px auto;
+}
+.wd50{
+    width: 50%;
+}
+.wd60{
+    width: 60%;
+}
+.wd100{
+    width: 100%;
+}
+.textright{
+    text-align: right;
+}
+.textcenter{
+    text-align: center;
+}
+.textleft{
+    text-align: left;
+}
+#btn_anular_venta{
+    background-color: #f0ad4e;
+    width: 90px;
+    height: 35px;
+    border: 0;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px;
+    color: #FFF;
+}
+#btn_anular_venta:hover{
+    background: #31A0FF;
+}
+
+#btn_facturar{
+    background-color: #5cb85c;
+    width: 90px;
+    height: 35px;
+    border: 0;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px;
+    float: left;
+    margin-left: 120px;
+    margin-top: -35px;
+    color: #FFF;
+}
+#btn_facturar:hover{
+    background: #059234;
+}

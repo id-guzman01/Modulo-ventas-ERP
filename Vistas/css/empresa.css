@@ -1,0 +1,21 @@
+form{
+    width: 80%;
+    padding: 20px 20px;
+    margin: auto;
+}
+.form-group{
+    color:rgba(3, 2, 12);
+    font-family:'Nunito';
+    margin-right:auto;
+}
+
+.btn{
+    margin-top: 0.5cm;
+    margin-left:0.5cm;
+}
+.container-fluid{
+    display: inline-block;
+    width: 100%;
+    padding: 20px;
+}
+

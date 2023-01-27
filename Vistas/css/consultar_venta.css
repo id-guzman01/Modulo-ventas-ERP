@@ -1,0 +1,126 @@
+
+.container-fluid{
+	width: 80%;
+	margin-top: 80px;
+}
+.formrow{
+	width: 90%
+	margin-left.20px;
+}
+.campos{
+    height: 25px;
+}
+.leter{
+    width: 80px;
+}
+.separador{
+    width: 4px;
+}
+#btn_exit{
+    margin-top: -1cm;
+    margin-right:1.9cm;
+    width: 35px;
+    outline: none;
+    border-radius: 15%;
+}
+.btn{
+    margin-top: 0.5cm;
+    margin-right:0.5cm;
+    outline: none;
+}
+form .btn_exit{
+    position: relative;
+    margin-top: -40px;
+    margin-right:60px;
+    float: right;
+    width: 35px;
+    height: 30px;
+    outline: none;
+    border-radius: 15%;
+    background-color:#FA1E1E;
+    cursor: pointer;
+}
+.tbl_venta{
+  
+  background-size: cover;
+  width: 80%;
+  margin: auto;
+  position: relative;
+   overflow: auto;
+}
+.tbl_total{
+  display: flex;
+  background-size: cover;
+  width: 80%;
+  position:relative;
+  margin: auto;
+
+}
+table{
+    text-align: center;
+    width: 90%;
+    margin-left:auto;
+    position: relative;
+    border-collapse: collapse;
+    overflow-x: auto;
+}
+th, td{
+    padding: 10px;
+    text-align: center;
+}
+
+thead{
+    background: -webkit-linear-gradient(to right, #3DA3A6, #28B640);
+    background: linear-gradient(to right, #3DA3A6, #28B640);
+    color: white;
+    
+}
+tr:nth-child(even){
+    background-color: #ddd;
+}
+tr:hover td{
+    background-color:#F4F6F6;
+    color: black;
+}
+
+@media (max-width: 35em)/*480px*/
+{
+    table{
+        width: 80%;
+    }
+    table tr{
+        display: flex;
+        flex-direction: column;
+        border: 1px solid gray;
+        padding: 1em;
+        margin-bottom: 1em;
+    }
+    table thead{
+        display: none;
+    }
+    .tbl_total{
+       display: flex;
+        flex-direction: column;
+        padding: 1em;
+        margin-bottom: 1em;
+        width: 100%;
+    }
+    
+}
+@media screen and (max-width: 980px){
+
+	.tbl_venta{
+	  background-size: cover;
+	  background-position:center;
+	  width: 100%;
+      margin-left: -40px;
+	}
+    .tbl_total{
+      background-size: cover;
+      background-position:center;
+      width: 100%;
+      margin-left: -40px;
+      overflow-x: auto;
+    }
+}
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="icon" type="icon/png" href='img/Icon.png'>
+        <link rel="stylesheet" type="text/css" href="css/menu_factura.css">
+        <link rel="stylesheet" type="text/css" href="css/footer.css">
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+        <title>Facturas</title>
+    </head>
+    <body>
+        <header>
+            <form>
+                <button class="btn_exit" type="submit" name="salir">X</button>
+            </form>
+             <h2 class="titulo">Facturas</h2>
+        </header>
+        <main>
+            <section class="contenedor sobre-nosotros">
+                <div class="contenedor-sobre-nosotros">
+                    <img src="img/cuenta.png" class="imagen">
+                    <div class="contenedor-textos">
+                        <h3><span>1</span>¿Qué es una Factura?</h3>
+                        <p>Es un documento de carácter mercantil que refleja la compraventa de un bien o la prestación de un servicio determinado. <br><br>
+                        La factura es esencial en cualquier servicio post-venta, pues es imprescindible para efectuar una devolución o una reclamación (tanto por parte del que vende como del que compra). <br><br>
+                        Es el justificante y garantía ante cualquier problema que pueda surgir entre ambas partes.<br><br>
+                        Tiene validez fiscal y legal, por lo que se considera una prueba de que una operación se ha realizado entre dos partes, de forma correcta y satisfactoria.</p>
+                        <br>
+                        <h3><span>2</span>Facturacion con ERP Ventas</h3>
+                        <p>Al momento de realizar una venta podras ir al apartado de "listar ventas" y tener la opcion de guardar los detalles de la venta en una factura en formato PDF, descargarlo y tenerlo a tu disposición. <br><br>
+                        En ella podras encontrar datos como: Datos del vendedor, datos del cliente informacion relacionada a los productos registrados en la venta, impuesto e iva si aplica y por ultimo el valor total de la venta</p>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="footer-container">
+                <div class="footer-main">
+                    <div class="footer-columna">
+                        <h3>Compañia</h3>
+                        <div><a href="home.html">Acerca de ERPVentas</a></div>
+                        <div><a href="politicas de privacidad.html">Politicas de privacidad</a></div>
+                        <div><a href="home.html">Terminos y condiciones</a></div>
+                        <div>
+                            <span><img src="img/logo.png"style="width: 128px;"></span>
+                        </div>
+                    </div>
+                    <div class="footer-columna">
+                        <h3>Direccion</h3>
+                        <div>
+                            <span>
+                                <img src="img/location.png">
+                                <p>Fusagasuga, Cundinamarca</p>
+                            </span>
+                        </div>
+                        <div>
+                        <span>
+                            <img src="img/contact.png">
+                            <p>(+57) 321-892-4539</p>
+                        </span>
+                        </div>
+                        <div>
+                        <span>
+                            <img src="img/email.png">
+                            <p>moduloerpventas@gmail.com</p>
+                        </span>
+                        </div>
+                    </div>
+                    <div class="footer-columna">
+                        <h3>Acerca de</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>   
+                </div>
+            </div>
+            <div class="footer-copy-redes">
+                <div class="main-copy-redes">
+                    <div class="footer-copy">
+                        &copy; 2021, Todos los derechos reservados | Erpventas |
+                    </div>
+                    <div class="footer-redes">
+                        <a href=""><img src="img/facebook.png"></a>
+                        <a href=""><img src="img/instagram.png"></a>
+                        <a href=""><img src="img/github.png"></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script type="text/javascript">
+            $(document).ready(function(){
+            $('.icon').click(function(){
+            $('.show').toggleClass('cancel');
+                });
+            });
+        </script>
+    </body>
+</html>

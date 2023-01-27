@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/proveedores.css">
+
+    <title>Registrar proveedores</title>
+</head>
+<body>
+<form action="../Controlador/Controlador.php" method="POST">
+    <input type="hidden" name="action" value="salirRegistrarProveedor">
+    <button class="btn btn-danger float-right" type="submit" name="salir">x</button>
+</form>
+<div class="container-fluid">
+            <form action="../Controlador/Controlador.php" method="POST">
+                <main>
+                    <div class="container-fluid">
+                        <h1>Proveedor</h1>
+                        <ol class="breadcrumb mb-4">
+                            <li class="breadcrumb-item active">Nuevo Proveedor</li>
+                        </ol>
+                    </div>
+                </main>
+                <div class="form row" >
+                    <div class="form-group col-md-12">
+                        <label>Datos Generales</label>
+                    </div>
+                    <div class="form-group col-md-5">
+                        <input type="hidden" name="action" value="RegistrarProovedores">
+                        <input type="text" class="form-control" id="Nombrepv" placeholder="Nombre Proveedor" required name="nomprov">
+                    </div>
+                    <div class="form-group col-md-5">
+                        <input type="text" class="form-control" id="Nit" placeholder="NIT/CIF" required name="nit">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <textarea type="text" class="form-control" id="Descripcionpv" placeholder="Descripcion" rows="5" required name="descripcion"></textarea>
+                    </div>
+                </div>
+            
+                <div class="form row">
+                    <div class="form-group col-md-12">
+                    <label>Datos de contacto</label>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <select class="form-control" id="pais" placeholder="País" required name="pais">
+                            <option selected>País</option>
+                            <option>Argentina</option>
+                            <option>Brasil</option>
+                            <option>Canadá</option>
+                            <option>Chile</option>
+                            <option>Colombia</option>
+                            <option>Ecuador</option>
+                            <option>El Salvador</option>
+                            <option>Honduras</option>
+                            <option>Paraguay</option>
+                            <option>México</option>
+                            <option>Panamá</option>
+                            <optio>Perú</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-5">
+                        <input type="text" class="form-control" id="Ciudad" placeholder="Ciudad" required name="ciudad">
+                    </div>
+                    <div class="form-group col-md-5">
+                        <input type="text" class="form-control" id="Direccion" placeholder="Dirección" required name="direccion">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <input type="text" class="form-control" id="Telefono" placeholder="Telefono" required name="telefono">
+                    </div>
+                    <div class="form-group col-md-5">
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="@email" required name="correo">
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-success">Registrar</button>
+                <button type="reset" class="btn btn-warning">Limpiar</button>
+            </form>
+        </div>
+    </body>
+</html>

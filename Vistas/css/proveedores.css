@@ -1,0 +1,14 @@
+.main{
+    width: 90%;
+    border: 2px solid black;
+    margin-top: auto;
+    margin-left: 230px;
+}
+form{
+    width: 90%;
+    padding: 20px 90px;
+}
+.btn{
+    margin-top: 0.5cm;
+    margin-right:0.5cm ;
+}

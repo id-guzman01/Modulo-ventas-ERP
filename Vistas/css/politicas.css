@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: -webkit-linear-gradient(to right, hsla(162, 100%, 84%, 0.548), #fff), url(../img/ERP.png);
+    background: linear-gradient(to right, hsla(158, 100%, 84%, 0.548), #fff), url(../img/ERP.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	font-family:'Nunito', sans-serif;
+}
+
+.titulo h1{
+	padding-top: 20px;
+	margin-left: 20px;
+	color: #252629;
+	font-size: 30px;
+}
+.titulo img{
+	width: 28px;
+	height: 28px;
+	margin-left: 5px;
+}
+.seccion{
+	width: 95%;
+	margin-left: 20px;
+	text-align: justify;
+}
+strong{
+	color: #252629;
+	font-size: 20px;
+
+
+}

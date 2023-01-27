@@ -1,0 +1,167 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+.izquierda{
+  background: #f2f2f2;
+  height: 100vh;
+  width: 20%;
+}
+.derecha{
+  
+  background-size: cover;
+  background-position:center;
+  width: 80%;
+  height:100vh;
+}
+#pantalla-dividida{
+ display: flex;
+}
+.izquierda{
+  z-index: 1;
+  top: 0;
+  background: #28B63B;
+  margin-top: 45px;
+  padding-top: 10px;
+  position: relative;
+  left: 20px;
+  width: 250px;
+  height: 50%;
+  transition: 0.5s;
+  transition-property: left;
+  overflow-y: auto;
+}
+.izquierda a{
+  color: #fff;
+  display: block;
+  width: 100%;
+  line-height: 60px;
+  text-decoration: none;
+  padding-left: 40px;
+  box-sizing: border-box;
+  transition: 0.5s;
+  transition-property: background;
+}
+.izquierda label{
+  color: #fff;
+  display: block;
+  width: 100%;
+  line-height: 20px;
+  text-decoration: none;
+  margin-top: 20px;
+  padding-left: 40px;
+  box-sizing: border-box;
+  font-weight: 800;
+   transition: 0.5s;
+  transition-property: background;
+}
+
+.izquierda a:hover{
+  color:#222;
+}
+.izquierda i{
+  padding-right: 10px;
+}
+.izquierda img{
+  border-radius: 50%;
+  border-color: #2222;
+  margin: auto;
+  display: block;
+  border: 3px solid #222;
+  text-align: center;
+}
+.izquierda .rol{
+  text-align: center;
+  margin-left: -20px;
+
+}
+.izquierda hr{
+
+  width: 80%;
+  height: 1px;
+  color: white;
+  
+}
+.content{
+  width: (100% - 250px);
+  margin-top: 60px;
+  padding: 20px;
+  margin-left: 250px;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  transition: 0.5s;
+}
+
+@media screen and (max-width: 480px){
+
+
+#pantalla-dividida{
+  flex-wrap: wrap;
+}
+
+.izquierda{
+  background: #f2f2f2;
+  height: 100vh;
+  width: 100%;
+}
+.derecha{
+  height: 100vh;
+  width: 100%;
+}
+.izquierda{
+  z-index: 1;
+  top: 0;
+  background: #28B63B;
+  margin-top: 30px;
+  padding-top: 10px;
+  position: relative;
+  left: 40px;
+  width: 350px;
+  height: 50%;
+  transition: 0.5s;
+  transition-property: left;
+  overflow-y: auto;
+}
+.izquierda a{
+  color: #fff;
+  display: block;
+  width: 100%;
+  line-height: 60px;
+  text-decoration: none;
+  padding-left: 40px;
+  box-sizing: border-box;
+  transition: 0.5s;
+  transition-property: background;
+}
+.izquierda label{
+  color: #fff;
+  display: block;
+  width: 100%;
+  line-height: 20px;
+  text-decoration: none;
+  padding-left: 40px;
+  box-sizing: border-box;
+  font-weight: 800;
+   transition: 0.5s;
+  transition-property: background;
+}
+
+.izquierda a:hover{
+  color:#222;
+}
+.izquierda i{
+  padding-right: 10px;
+}
+.izquierda img{
+  margin-left: 105px;
+  position: relative;
+}
+.izquierda hr{
+
+  width: 80%;
+  height: 1px;
+  color: white;
+  
+}
+}

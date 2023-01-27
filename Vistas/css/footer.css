@@ -1,0 +1,149 @@
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing: border-box; 
+}
+footer{
+	width: 100%;
+	font-family: 'Nunito', sans-serif;
+}
+.footer-container{
+	width: 100%;
+	background:#DBD2D2;
+	color: fff; 
+
+}
+.footer-main{
+	width: 98%;
+	max-width: 1000px;
+	margin: auto;
+	padding: 58px 0;
+	display: flex;
+	flex-wrap: wrap;
+
+
+}
+.footer-main .footer-columna{
+	width: calc(100%/3);
+	text-align: justify;
+	text-decoration: none;
+	flex-wrap: wrap;
+}
+
+.footer-main .footer-columna img{
+	margin-left:0;
+	width: 16px;
+
+}
+
+
+.footer-main .footer-columna:nth-child(2){
+	padding: 0 10px;
+	flex-wrap: wrap;
+
+}
+.footer-main .footer-columna h3{
+	font-size: 32px;
+	color: #28B63B;
+	margin-bottom: 30px;
+
+}
+.footer-main .footer-columna a{
+	text-decoration: none;
+	flex-wrap: wrap;
+	margin-bottom: 30px;
+	color: #000;
+	
+}
+.footer-main .footer-columna a:hover{
+	color: #246355;
+}		
+.footer-main .footer-columna div{
+	margin-bottom: 10px;
+}
+.footer-main .footer-columna span p{
+	display: inline-block;
+	margin-left: 5px;
+	margin-bottom: 15px;
+	font-family: 'Nunito', sans-serif;
+}
+.footer-copy-redes{
+	width: 100%;
+	background: #000;
+	border-top: 3px solid #FFF;
+}
+.main-copy-redes{
+width: 98%;
+max-width: 1000px;
+padding: 15px 0;
+margin: auto;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+align-items: center;
+}
+.main-copy-redes .footer-copy{
+	width: 70%;
+	color: #FFF;
+}
+.main-copy-redes .footer-redes{
+	width: 30%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.main-copy-redes .footer-redes a{
+	display: inline-block;
+	text-decoration: none;
+	width: 40px;
+	height: 40px;
+	line-height: 60px;
+	border-radius: 50%;
+	background: #fff;
+	color: #000;
+	text-align: center;
+	margin-top: 20px;
+}
+@media screen and (max-width: 750px){
+	.footer-main .footer-columna{
+		padding: 0 10px;
+	}
+	.footer-main .footer-columna h3{
+		font-size: 28px;
+	}
+	.footer-main .footer-columna p{
+		font-size: 14px;
+	}
+}
+@media screen and (max-width: 640px){
+	.footer-main{
+		padding: 10px 0; 
+	}
+	.footer-main .footer-columna{
+		width: 100%;
+		text-align: center;
+		margin: 10px 0;
+	}
+	.footer-main .footer-columna h3{
+		margin-bottom: 5px;
+	}
+	.footer-main .footer-columna span{
+		display: block;
+	}
+	.main-copy-redes .footer-copy{
+		width: 100%;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	.main-copy-redes .footer-redes{
+		width: 80%;
+		margin:auto;
+	
+	}
+
+}
+
+
+
